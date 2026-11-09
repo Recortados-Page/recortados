@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recortados · ¿Cuánto cuesta ser gimnasta en Medellín?</title>
+  <meta name="description" content="Cada gasto de practicar gimnasia en Medellín es un renglón con precio y fuente. Arma la factura de un año.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,800;1,900&family=Space+Mono:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<!-- Marca y factura flotante (no es un menú: la navegación va por botones en cada página) -->
+<div class="corner" aria-label="Accesos rápidos">
+  <a class="corner__brand" href="#inicio" aria-label="Volver al inicio">RECORTADOS</a>
+  <a class="bill-chip" href="#factura" aria-label="Ver tu factura">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.5"></circle><circle cx="17" cy="20" r="1.5"></circle><path d="M2 3h3l2.4 11.2a2 2 0 0 0 2 1.6h7.2a2 2 0 0 0 2-1.6L21 7H6"></path></svg>
+    <span class="bill-chip__count" data-cart-count>0</span>
+    <span class="bill-chip__total" data-cart-total>$0</span>
+  </a>
+</div>
+
+<main id="app">
+
+  <!-- ===================== INICIO ===================== -->
+  <section class="screen screen--home" data-screen="inicio" aria-labelledby="t-inicio">
+    <div class="home">
+      <div class="home__copy">
+        <div class="cutline" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M20 4 8.12 15.88"></path><path d="M14.47 14.48 20 20"></path><path d="M8.12 8.12 12 12"></path></svg>
+        </div>
+        <h1 class="home__title" id="t-inicio">Recortados</h1>
+        <p class="home__subtitle"><span class="tape">¿Cuánto cuesta ser gimnasta en Medellín?</span></p>
+        <p class="home__lede">Cada gasto de practicar gimnasia es un renglón con precio. Llévalos al carrito, arma la factura de un año y compárala con un salario mínimo.</p>
+        <div class="home__actions">
+          <a class="btn btn--red btn--lg" href="#gasto">Empezar el recorrido
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>
+          </a>
+        </div>
+        <nav class="home__index" aria-label="Capítulos">
+          <span class="home__index-label">O ve directo a</span>
+          <ol>
+            <li><a href="#gasto"><span>01</span>El gasto</a></li>
+            <li><a href="#deportistas"><span>02</span>La deportista</a></li>
+            <li><a href="#tiempo"><span>03</span>Costo vs. tiempo</a></li>
+            <li><a href="#ayuda"><span>04</span>¿Quién ayuda?</a></li>
+            <li><a href="#factura"><span>05</span>La factura</a></li>
+            <li><a href="#metodologia"><span>06</span>Cómo lo calculamos</a></li>
+          </ol>
+        </nav>
+      </div>
+
+      <div class="banner" aria-roledescription="carrusel" aria-label="Antes de la plata, la gimnasia">
+        <div class="banner__viewport">
+          <div class="banner__track">
+            <figure class="banner__slide" aria-roledescription="lámina" aria-label="1 de 7">
+              <img src="assets/banner/slide-01.jpg" width="960" height="1200" alt="Gimnasta con los brazos extendidos. Antes de la plata, la gimnasia: ¿qué es la gimnasia y por qué tantas familias sueñan con ella para sus hijos?">
+            </figure>
+            <figure class="banner__slide" aria-roledescription="lámina" aria-label="2 de 7">
+              <img src="assets/banner/slide-02.jpg" width="960" height="1200" alt="Un deporte, diez aparatos. La gimnasia artística combina fuerza, equilibrio y precisión. Mujeres: suelo, salto, barra de equilibrio y barras asimétricas. Hombres: suelo, salto, anillas, paralelas, barra fija y caballo con arcos." loading="lazy">
+            </figure>
+            <figure class="banner__slide" aria-roledescription="lámina" aria-label="3 de 7">
+              <img src="assets/banner/slide-03.jpg" width="960" height="1200" alt="Mucho más que piruetas: es una de las mejores bases deportivas y desarrolla fuerza, flexibilidad, coordinación y disciplina. Por eso muchos niños empiezan antes de los 7 años." loading="lazy">
+            </figure>
+            <figure class="banner__slide" aria-roledescription="lámina" aria-label="4 de 7">
+              <img src="assets/banner/slide-04.jpg" width="960" height="1200" alt="El camino hacia el podio: torneos de liga, Juegos Nacionales, Campeonatos Panamericanos, Mundiales y Juegos Olímpicos. La gimnasia es olímpica desde la primera edición moderna, en 1896." loading="lazy">
+            </figure>
+            <figure class="banner__slide" aria-roledescription="lámina" aria-label="5 de 7">
+              <img src="assets/banner/slide-05.jpg" width="960" height="1200" alt="Gimnasia rítmica, el arte de moverse con música: combina danza, flexibilidad y manejo de un aparato en rutinas con música. Un jurado califica la dificultad, la ejecución y el valor artístico." loading="lazy">
+            </figure>
+            <figure class="banner__slide" aria-roledescription="lámina" aria-label="6 de 7">
+              <img src="assets/banner/slide-06.jpg" width="960" height="1200" alt="Aparatos de la gimnasia rítmica: cuerda, aro, pelota, mazas y cinta. Modalidades: individual y conjuntos de 5 gimnastas. Es olímpica desde 1984 en individual y desde 1996 en conjuntos." loading="lazy">
+            </figure>
+            <figure class="banner__slide" aria-roledescription="lámina" aria-label="7 de 7">
+              <img src="assets/banner/slide-07.jpg" width="960" height="1200" alt="La medalla se ve. ¿Y lo que cuesta? Detrás de cada rutina hay inscripciones, uniformes, entrenadores y viajes. ¿Cuánto cuesta realmente llegar y cuánto apoya el Inder?" loading="lazy">
+            </figure>
+          </div>
+        </div>
+        <div class="banner__controls">
+          <button class="round-btn" type="button" data-banner="prev" aria-label="Lámina anterior">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
+          </button>
+          <div class="banner__dots" role="group" aria-label="Elegir lámina"></div>
+          <button class="round-btn round-btn--solid" type="button" data-banner="next" aria-label="Lámina siguiente">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+          </button>
+          <button class="banner__pause" type="button" data-banner="toggle" aria-pressed="false">Pausar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__run">
+        <span>TRANSPORTE $2.929.440</span><span>MENSUALIDAD $2.476.800</span><span>ALIMENTACIÓN $1.579.200</span><span>SALUD $1.404.004</span><span>ENTRENADOR $1.401.619</span><span>VIAJES $1.142.000</span><span>UNIFORMES $668.800</span><span>INSCRIPCIONES $550.852</span><span>TOTAL AL AÑO $12.152.715</span>
+        <span>TRANSPORTE $2.929.440</span><span>MENSUALIDAD $2.476.800</span><span>ALIMENTACIÓN $1.579.200</span><span>SALUD $1.404.004</span><span>ENTRENADOR $1.401.619</span><span>VIAJES $1.142.000</span><span>UNIFORMES $668.800</span><span>INSCRIPCIONES $550.852</span><span>TOTAL AL AÑO $12.152.715</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 01 · EL GASTO ===================== -->
+  <section class="screen" data-screen="gasto" aria-labelledby="t-gasto" hidden>
+    <div class="wrap">
+      <header class="chapter-head">
+        <span class="chapter-head__num" style="--c: var(--blue)">01</span>
+        <div>
+          <h2 class="chapter-head__title" id="t-gasto">El gasto</h2>
+          <p class="chapter-head__lede">Un año de gimnasia, rubro por rubro. Arrastra cada gasto al carrito —o toca <strong>Agregar</strong>— y mira cómo se arma la factura.</p>
+        </div>
+      </header>
+
+      <div class="store">
+        <div class="shelf">
+          <div class="shelf__bar">
+            <span class="eyebrow">Promedio anual por rubro · 25 respuestas</span>
+            <button class="btn btn--ghost btn--sm" type="button" data-cart="all">Agregar todo</button>
+          </div>
+          <ul class="products" data-products></ul>
+          <p class="note">8 de 25 familias creen que lo que más pesa son los uniformes y los implementos. Búscalos en la estantería: son el 5,5 % del gasto.</p>
+        </div>
+
+        <aside class="cart" aria-labelledby="t-cart">
+          <div class="cart__inner" data-dropzone>
+            <div class="cart__head">
+              <h3 class="cart__title" id="t-cart">Tu carrito</h3>
+              <span class="cart__count"><span data-cart-count>0</span> de 8 rubros</span>
+            </div>
+            <div class="cart__stack" aria-hidden="true" data-cart-stack></div>
+            <ul class="cart__items" data-cart-items aria-live="polite"></ul>
+            <p class="cart__empty" data-cart-empty>Suelta aquí un gasto o toca <strong>Agregar</strong>.</p>
+            <div class="cart__sum">
+              <div class="cart__row"><span>Subtotal al año</span><strong data-cart-total>$0</strong></div>
+              <div class="cart__row cart__row--muted"><span>Del gasto total promedio</span><span data-cart-share>0 %</span></div>
+              <div class="cart__row cart__row--muted"><span>Equivale a</span><span data-cart-smmlv>0 salarios mínimos</span></div>
+            </div>
+            <div class="cart__actions">
+              <a class="btn btn--navy btn--block" href="#factura">Ver la factura</a>
+              <button class="btn btn--link" type="button" data-cart="clear">Vaciar carrito</button>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="facts">
+        <div class="fact fact--red">
+          <span class="eyebrow">¿Quién lo paga?</span>
+          <span class="fact__big">18 de 25</span>
+          <span class="fact__text">familias dicen no recibir ningún apoyo. Cinco reportan apoyo del Inder y dos, beca o descuento del club o la liga. <a href="#ayuda">¿Quién ayuda? →</a></span>
+        </div>
+        <div class="fact fact--lime">
+          <span class="eyebrow">Cuando el bolsillo decide</span>
+          <span class="fact__big">6 de 25</span>
+          <span class="fact__text">han faltado alguna vez a entrenar o a competir por falta de dinero. Cuatro de ellas no están afiliadas a liga.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 02 · DEPORTISTAS ===================== -->
+  <section class="screen" data-screen="deportistas" aria-labelledby="t-deportistas" hidden>
+    <div class="wrap">
+      <header class="chapter-head">
+        <span class="chapter-head__num" style="--c: var(--teal)">02</span>
+        <div>
+          <h2 class="chapter-head__title" id="t-deportistas">La deportista</h2>
+          <p class="chapter-head__lede">Salomé Ricaurte, gimnasta de rítmica de alto rendimiento, en entrevista.</p>
+        </div>
+      </header>
+
+      <div class="voice">
+        <figure class="reel" data-youtube="https://www.youtube.com/watch?v=d_C08Lq2sCo">
+          <div class="reel__frame" data-reel-frame>
+            <a class="reel__placeholder" href="https://www.youtube.com/watch?v=d_C08Lq2sCo" target="_blank" rel="noopener">
+              <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l6 3.5-6 3.5z"></path></svg>
+              <span class="reel__tag">Video · YouTube</span>
+              <span class="reel__title">Salomé Ricaurte</span>
+            </a>
+          </div>
+          <figcaption>Entrevista en video con Salomé Ricaurte, gimnasta de rítmica.</figcaption>
+        </figure>
+
+        <aside class="profile" aria-labelledby="t-salome">
+          <span class="eyebrow">Gimnasia rítmica · Antioquia</span>
+          <h3 class="profile__name" id="t-salome">Salomé Ricaurte</h3>
+          <p class="profile__lede">Deportista de alto rendimiento desde niña. Desde los 13 años compite a nivel mundial representando a Colombia.</p>
+          <ul class="profile__list">
+            <li><span>Primera</span>campeona de medalla individual para Antioquia</li>
+            <li><span>2019</span>Primer campeonato mundial juvenil, en Rusia</li>
+            <li><span>Múltiple</span>medallista nacional</li>
+            <li><span>Hoy</span>Estudia Administración de Empresas en la Universidad de Antioquia y sigue compitiendo en gimnasia rítmica de manera profesional</li>
+          </ul>
+          <a class="btn btn--outline btn--sm" href="#tiempo">El tiempo que exige la gimnasia →</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 03 · COSTO VS TIEMPO ===================== -->
+  <section class="screen" data-screen="tiempo" aria-labelledby="t-tiempo" hidden>
+    <div class="wrap">
+      <header class="chapter-head">
+        <span class="chapter-head__num" style="--c: var(--red)">03</span>
+        <div>
+          <h2 class="chapter-head__title" id="t-tiempo">Costo vs. tiempo</h2>
+          <p class="chapter-head__lede">De los 3 años a la élite: el tiempo que exige la gimnasia en Antioquia.</p>
+        </div>
+      </header>
+
+      <div class="prose">
+        <p class="prose__lead">En los Juegos Suramericanos de Santa Fe 2026, Colombia cerró tercera en el medallero con 192 medallas, y el deportista del país con más podios fue el gimnasta Ángel Barajas, con tres oros y dos platas. Barajas ya había sido medallista olímpico en París 2024. Lo que ningún medallero muestra es el camino que hay detrás de cada gimnasta, que empieza desde los tres o cuatro años en una sala de entrenamiento y sigue durante más de una década. Ese camino también se recorre en ligas como la Liga Antioqueña de Gimnasia.</p>
+        <p>Antioquia tiene su propio motivo de orgullo reciente. En mayo de 2026 se quedó con el título por equipos del Campeonato Nacional, una medalla que, según la gimnasta Gina Escobar, todos los departamentos buscan en la rama femenina. Detrás de ese resultado hay una pregunta menos visible: <strong>¿cuánto tiempo de la vida de una niña y de su familia cuesta llegar hasta allí?</strong></p>
+        <p>La respuesta empieza por entender cómo se organiza el camino. Las categorías no las define la Liga Antioqueña de Gimnasia (LAGIM), sino la Federación Colombiana de Gimnasia, y la liga las aplica. En el programa de niveles USAG, las gimnastas pueden competir desde el nivel 3 a los 7 u 8 años; a los 9 pasan a nivel 4, a los 10 al 5, a los 11 al 6 y a los 12 al 7. Desde los 13 o 14 años compiten en el nivel 8, y a partir de los 15 entran en las categorías juvenil y mayores, que se rigen por el código internacional de la FIG.</p>
+      </div>
+
+      <ol class="path" aria-label="El camino por edades">
+        <li style="--c: var(--teal)"><span class="path__age">3–6 años</span><span class="path__stage">Iniciación</span><span class="path__note">Sin ranking ni competencia</span></li>
+        <li style="--c: var(--lime)"><span class="path__age">7–8</span><span class="path__stage">Nivel 3</span><span class="path__note">Primera competencia por niveles</span></li>
+        <li style="--c: var(--orange)"><span class="path__age">9–12</span><span class="path__stage">Niveles 4 a 7</span><span class="path__note">Un nivel por año</span></li>
+        <li style="--c: var(--blue)"><span class="path__age">13–14</span><span class="path__stage">Nivel 8</span><span class="path__note">Prejuvenil en grupos de edades</span></li>
+        <li style="--c: var(--red)"><span class="path__age">15+</span><span class="path__stage">Juvenil y mayores</span><span class="path__note">Código internacional FIG</span></li>
+      </ol>
+
+      <div class="prose">
+        <p>En los campeonatos de grupos de edades, el esquema cambia de nombre: preinfantil (9 y 10 años), infantil (11 y 12), prejuvenil (13 y 14) y juvenil (14 y 15), según el programa técnico de la Confederación Sudamericana de Gimnasia. La edad se cuenta por año calendario: una deportista nacida en diciembre de 2016 tiene 10 años en 2026, sin importar el mes de su cumpleaños.</p>
+        <p>Pero el camino empieza antes de la primera categoría. Niños y niñas de 3 o 4 años dan sus primeros pasos en la gimnasia sin entrar todavía a ningún ranking: en los documentos de la Federación consultados, la primera competencia por niveles aparece entre los 6 y los 8 años. Esos años de iniciación no figuran en los resultados, pero también cuentan como tiempo invertido.</p>
+        <p>Las horas cambian con cada etapa. En la iniciación, entre los 6 y los 9 años, las niñas de nuestra encuesta entrenan en promedio <strong>cerca de 5 horas por semana</strong>, repartidas en varias tardes. En los niveles 5 a 8, entre los 10 y los 13 años, la carga sube a <strong>8 horas semanales</strong>. En la categoría formativa de la Liga, la mediana llega a <strong>19 horas por semana</strong>, casi cinco veces más que fuera de ella. Y en el nivel más exigente que registra la encuesta, el entrenamiento llega a <strong>30 horas semanales</strong>: así lo reportan dos familias de la Liga.</p>
+      </div>
+
+      <figure class="chart chart--strip">
+        <div class="chart__head">
+          <span class="eyebrow">Gráfica 1 · El tiempo invertido · Cada punto es una deportista</span>
+          <span class="chart__title">Entrar a la Liga en categoría formativa multiplica casi por cinco las horas de entrenamiento: de 4 a 19 por semana</span>
+        </div>
+        <ul class="legend" aria-label="Leyenda">
+          <li><span class="legend__mark legend__mark--dot" aria-hidden="true"></span>Una deportista</li>
+          <li><span class="legend__mark legend__mark--median" aria-hidden="true"></span>Mediana del grupo</li>
+        </ul>
+        <div class="strip" data-chart="strip"></div>
+        <figcaption class="note">Horas de entrenamiento por semana declaradas en la encuesta (25 respuestas). En las mayores, las horas bajan porque combinan el deporte con el estudio o el trabajo. Fuente: encuesta propia, octubre de 2026.</figcaption>
+      </figure>
+
+      <div class="prose">
+        <p>A ese tiempo se suman traslados, competencias y costos que, según la encuesta, representan en promedio <strong>$12.152.715 al año</strong> para cada familia, 6,1 salarios mínimos. El transporte, con $2.929.440, es el rubro que más pesa. Una madre lo resume en la encuesta: el transporte «debe ser doble por el acompañamiento del papá o mamá».</p>
+      </div>
+
+      <div class="chart-grid">
+        <figure class="chart chart--wide">
+          <div class="chart__head">
+            <span class="eyebrow">Gráfica 2 · Cada punto es una familia</span>
+            <span class="chart__title">A más horas de entrenamiento, más gasto: cuatro familias pagan al año más que un año de salario mínimo</span>
+          </div>
+          <ul class="legend" aria-label="Leyenda">
+            <li><span class="legend__mark legend__mark--a" aria-hidden="true"></span>Afiliada a liga (14)</li>
+            <li><span class="legend__mark legend__mark--n" aria-hidden="true"></span>No afiliada (11)</li>
+          </ul>
+          <div class="chart__plot" data-chart="scatter"></div>
+          <figcaption class="note">Gasto anual declarado frente a horas semanales de entrenamiento. Correlación de rango (Spearman): 0,80, con 25 casos; es una relación exploratoria, no una causa. Fuente: encuesta propia, octubre de 2026.</figcaption>
+        </figure>
+
+        <figure class="chart chart--wide">
+          <div class="chart__head">
+            <span class="eyebrow">Gráfica 3 · Medianas por grupo</span>
+            <span class="chart__title">Entrar a la liga casi triplica las horas y multiplica por 2,7 el gasto del año</span>
+          </div>
+          <ul class="legend" aria-label="Leyenda">
+            <li><span class="legend__mark legend__mark--a legend__mark--bar" aria-hidden="true"></span>Afiliadas a liga (14)</li>
+            <li><span class="legend__mark legend__mark--n legend__mark--bar" aria-hidden="true"></span>No afiliadas (11)</li>
+          </ul>
+          <div class="pairs" data-chart="groups"></div>
+          <figcaption class="note">Mediana de cada grupo; cada fila tiene su propia escala. Las no afiliadas entrenan casi siempre en escenarios del Inder, sin mensualidad ni viajes. Fuente: encuesta propia.</figcaption>
+        </figure>
+      </div>
+
+      <div class="facts">
+        <div class="fact fact--red">
+          <span class="eyebrow">El costo de seguir</span>
+          <span class="fact__big">8 de 8</span>
+          <span class="fact__text">respuestas que marcan 3 o más (de 5) en cercanía al abandono por costos son de deportistas afiliadas a liga. Ninguna no afiliada pasa de 2.</span>
+        </div>
+        <div class="fact fact--lime">
+          <span class="eyebrow">Ingresos modestos, horas de élite</span>
+          <span class="fact__big">30 h</span>
+          <span class="fact__text">por semana entrena una deportista de liga cuyo hogar gana entre 1 y 2 salarios mínimos. Su familia gasta $11,7 M al año: entre 24 % y 49 % del ingreso del hogar.</span>
+        </div>
+      </div>
+
+      <div class="prose prose--close">
+        <p>Al final, el podio es apenas la parte visible de una inversión que se mide en años, en horas semanales y en decisiones familiares. Cada medalla de Antioquia, como la del Nacional de mayo, resume más de una década de entrenamientos que empezaron cuando los gimnastas aún no sabían qué era competir. Por eso la pregunta no es solo cuántas medallas ganan, sino <strong>cuántos gimnastas logran sostener el camino y a qué costo para ellos y sus familias</strong>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 04 · QUIÉN AYUDA ===================== -->
+  <section class="screen" data-screen="ayuda" aria-labelledby="t-ayuda" hidden>
+    <div class="wrap">
+      <header class="chapter-head">
+        <span class="chapter-head__num" style="--c: var(--orange)">04</span>
+        <div>
+          <h2 class="chapter-head__title" id="t-ayuda">¿Quién ayuda?</h2>
+          <p class="chapter-head__lede">El apoyo existe, pero no alcanza y no llega a todas. Revisamos los convenios de Indeportes Antioquia con la Liga Antioqueña de Gimnasia y los contratos del Inder: el dinero público va a la selección de alto rendimiento, mientras 21 de las 25 familias encuestadas están en la base formativa.</p>
+        </div>
+      </header>
+
+      <div class="money-hero">
+        <div class="money-hero__item">
+          <span class="eyebrow">Convenio 324 de 2026 · Indeportes Antioquia</span>
+          <span class="money-hero__big">$380 M</span>
+          <span class="money-hero__text">para la Liga Antioqueña de Gimnasia en 2026, 2,5 veces los $150 M del convenio de 2025. Equivalen a 190 salarios mínimos.</span>
+        </div>
+        <div class="money-hero__item money-hero__item--alt">
+          <span class="eyebrow">¿Para quién?</span>
+          <span class="money-hero__big">45</span>
+          <span class="money-hero__text">deportistas de alto rendimiento que buscan clasificar a los Juegos Nacionales 2027, más siete entrenadores. Es la población que la Liga inscribió en la propuesta de 2025.</span>
+        </div>
+      </div>
+
+      <h3 class="block-title">El apoyo frente a la factura</h3>
+      <div class="gap-meter">
+        <div class="gap-meter__row">
+          <span class="gap-meter__label">Lo que paga una familia al año (promedio de la encuesta)</span>
+          <span class="gap-meter__bar"><span style="--w: 100%; --bar: var(--red)"></span></span>
+          <span class="gap-meter__value">$12.152.715</span>
+        </div>
+        <div class="gap-meter__row">
+          <span class="gap-meter__label">Apoyo de Indeportes por deportista de la selección (2025)</span>
+          <span class="gap-meter__bar"><span style="--w: 27.4%; --bar: var(--teal)"></span></span>
+          <span class="gap-meter__value">$3.333.333</span>
+        </div>
+        <div class="gap-meter__row">
+          <span class="gap-meter__label">Apoyo directo que recibe la mayoría de familias encuestadas</span>
+          <span class="gap-meter__bar gap-meter__bar--empty"><span></span></span>
+          <span class="gap-meter__value">$0 · 18 de 25</span>
+        </div>
+        <p class="note">$150.000.000 del convenio de 2025 divididos entre los 45 deportistas de la propuesta: cubrirían el 27 % de lo que paga una familia en un año. Y ese dinero no llega a las familias: lo ejecuta la Liga en eventos, preparación, implementos y uniformes. Para 2026 no hay lista de beneficiarios publicada, así que no calculamos el valor por deportista.</p>
+      </div>
+
+      <div class="split">
+        <div class="split__col">
+          <h3 class="block-title">En qué se va el dinero</h3>
+          <p class="split__lede">Presupuesto del convenio de 2025 ($150 M) por línea de inversión.</p>
+          <ul class="budget" data-budget>
+            <li style="--w: 53.3%; --c: var(--red)"><span class="budget__name">Participación en eventos deportivos</span><span class="budget__bar"><span></span></span><span class="budget__val">$80 M · 53 %</span></li>
+            <li style="--w: 25%; --c: var(--orange)"><span class="budget__name">Preparación</span><span class="budget__bar"><span></span></span><span class="budget__val">$37,5 M · 25 %</span></li>
+            <li style="--w: 15%; --c: var(--blue)"><span class="budget__name">Implementación deportiva</span><span class="budget__bar"><span></span></span><span class="budget__val">$22,5 M · 15 %</span></li>
+            <li style="--w: 6.7%; --c: var(--teal)"><span class="budget__name">Uniformes de competencia y entrenamiento</span><span class="budget__bar"><span></span></span><span class="budget__val">$10 M · 7 %</span></li>
+          </ul>
+          <p class="note">Los eventos previstos son, en su mayoría, de élite: Panamericano de Mayores en Panamá, Mundial Juvenil de rítmica en Sofía, Mundial de artística en Yakarta, concentración de trampolín en España, Suramericano en Cochabamba.</p>
+        </div>
+        <div class="split__col">
+          <h3 class="block-title">Lo que dicen los papeles</h3>
+          <ul class="clauses">
+            <li><span class="clauses__tag">Uniformes</span><p>$10 M entre 45 deportistas son <strong>$222.222</strong> por cabeza. Una familia de la encuesta gasta en promedio <strong>$668.800</strong> al año en uniformes e implementos.</p></li>
+            <li><span class="clauses__tag">Sobrecostos</span><p>Si los precios superan lo avalado, el convenio dice que esos excedentes «serán asumidos por la Liga» (cláusula séptima, obligación 9).</p></li>
+            <li><span class="clauses__tag">Desembolsos</span><p>Llegan por tramos de hasta el 40 % del valor y solo contra rendición de cuentas, cotizaciones y paz y salvo de seguridad social.</p></li>
+            <li><span class="clauses__tag">Inder</span><p>Los 20 contratos del Inder con la Liga de Gimnasia entre 2022 y 2025 se registran como servicios de <strong>juzgamiento de paradas, torneos y festivales</strong>: pagan el evento, no a la deportista. En ciclismo sí aparece la figura de «apoyo y estímulos» a los deportistas.</p></li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="block-title">Contratos y convenios revisados</h3>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Tabla de contratos">
+        <table class="contracts">
+          <thead>
+            <tr><th scope="col">Entidad</th><th scope="col">Contrato</th><th scope="col">Objeto</th><th scope="col">Valor</th><th scope="col">A quién llega</th><th scope="col">Fuente</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Indeportes Antioquia</strong></td>
+              <td>Convenio 324 de 2026<br><span class="contracts__sub">Plazo: hasta el 30-dic-2026</span></td>
+              <td>Fortalecer el alto rendimiento de los atletas de la Liga que representarán a Antioquia en los Juegos Deportivos Nacionales 2027.</td>
+              <td class="contracts__money">$380.000.000</td>
+              <td>Selección Antioquia de gimnasia. Lista de beneficiarios 2026 no publicada.</td>
+              <td>Anexo clausulado del convenio; CDP 349 del 14-ene-2026, recursos propios. <a href="https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.9834754&amp;isFromPublicArea=True&amp;isModal=False" target="_blank" rel="noopener">SECOP II ↗</a></td>
+            </tr>
+            <tr>
+              <td><strong>Indeportes Antioquia</strong></td>
+              <td>Convenio 2025<br><span class="contracts__sub">Propuesta radicada el 19-may-2025</span></td>
+              <td>El mismo objeto: preparación y competencias rumbo a los Juegos Nacionales 2027.</td>
+              <td class="contracts__money">$150.000.000</td>
+              <td>45 deportistas de alto rendimiento (artística, rítmica y trampolín) y 7 entrenadores.</td>
+              <td>Propuesta de la Liga (radicado R 202502003466); CDP 484 del 25-abr-2025, en dos rubros: $83.639.011 y $66.360.989.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="facts">
+        <div class="fact fact--paper" style="--accent: var(--teal)">
+          <span class="eyebrow">Cofinanciación</span>
+          <span class="fact__title">$110.000 M para organismos deportivos reconocidos en 2025.</span>
+          <span class="fact__text">El 23,7 % del presupuesto. El documento de rendición de cuentas no menciona la gimnasia.</span>
+        </div>
+        <div class="fact fact--paper" style="--accent: var(--blue)">
+          <span class="eyebrow">Lo que sí cubre</span>
+          <span class="fact__title">Hospedaje para convocados en la concentración de junio de 2026.</span>
+          <span class="fact__text">Resolución 036 de 2026. Es apoyo a selecciones, no a la gimnasia formativa.</span>
+        </div>
+      </div>
+
+      <div class="petitions">
+        <div>
+          <span class="eyebrow">Lo que respondió la Liga</span>
+          <p>La Liga Antioqueña de Gimnasia respondió que no entrega apoyos directos a las deportistas: el convenio con Indeportes lo ejecuta ella en eventos y en la preparación de la selección.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 05 · LA FACTURA ===================== -->
+  <section class="screen" data-screen="factura" aria-labelledby="t-factura" hidden>
+    <div class="wrap">
+      <header class="chapter-head">
+        <span class="chapter-head__num" style="--c: var(--lime-ink)">05</span>
+        <div>
+          <h2 class="chapter-head__title" id="t-factura">La factura</h2>
+          <p class="chapter-head__lede">El total de los hallazgos. El más importante: cada rubro medido contra un salario mínimo.</p>
+        </div>
+      </header>
+
+      <div class="headline-finding">
+        <span class="headline-finding__num" data-smmlv-total>6,1</span>
+        <span class="headline-finding__text">salarios mínimos cuesta, en promedio, un año de gimnasia en Medellín: <span data-total>$12.152.715</span>. El apoyo de Indeportes por deportista de la selección equivale a 1,7.</span>
+      </div>
+
+      <ol class="findings">
+        <li><a href="#gasto" style="--c: var(--red)"><span class="findings__n">01</span><strong>Lo que más pesa no es lo que creen.</strong> 8 de 25 familias señalan los uniformes; son el 5,5 % del gasto. Transporte y mensualidad suman el 44 %.</a></li>
+        <li><a href="#tiempo" style="--c: var(--blue)"><span class="findings__n">02</span><strong>Más horas, más factura.</strong> Las afiliadas a liga entrenan 11 horas semanales y gastan $13,5 M al año; las demás, 4 horas y $5,0 M.</a></li>
+        <li><a href="#ayuda" style="--c: var(--teal)"><span class="findings__n">03</span><strong>El apoyo va a la élite.</strong> $380 M de Indeportes para 45 deportistas de selección; 18 de 25 familias no reciben ningún apoyo.</a></li>
+        <li><a href="#gasto" style="--c: var(--orange)"><span class="findings__n">04</span><strong>Quién paga.</strong> 21 de 25 están en categoría formativa y 22 respuestas las dieron madres, padres o acudientes.</a></li>
+      </ol>
+
+      <div class="cart-status" data-cart-status></div>
+
+      <div class="invoice-layout">
+        <div class="receipt" id="recibo">
+          <div class="receipt__head">
+            <div class="receipt__brand">RECORTADOS</div>
+            <div class="receipt__sub">FACTURA DE UN AÑO DE GIMNASIA · MEDELLÍN</div>
+            <dl class="receipt__info">
+              <div><dt>CLIENTE</dt><dd>UNA FAMILIA PROMEDIO</dd></div>
+              <div><dt>PERIODO</dt><dd>12 MESES</dd></div>
+              <div><dt>MONEDA</dt><dd>PESOS (COP)</dd></div>
+            </dl>
+          </div>
+          <hr class="receipt__rule">
+          <table class="bill">
+            <caption class="sr-only">Gasto anual promedio por concepto, con su porcentaje del gasto y su equivalencia en salarios mínimos</caption>
+            <colgroup><col><col class="bill__c-money"><col class="bill__c-pct"><col class="bill__c-sm"></colgroup>
+            <thead>
+              <tr><th scope="col">CONCEPTO</th><th scope="col">AL AÑO</th><th scope="col">%</th><th scope="col">SAL. MÍN.</th></tr>
+            </thead>
+            <tbody data-receipt-lines></tbody>
+            <tbody class="bill__totals" data-receipt-totals></tbody>
+          </table>
+          <hr class="receipt__rule">
+          <dl class="receipt__ref">
+            <div><dt>MEDIANA DEL GASTO ANUAL</dt><dd data-mediana>$10.270.000</dd></div>
+            <div><dt>SALARIO MÍNIMO MENSUAL DE REFERENCIA</dt><dd data-smmlv-value>$2.000.000</dd></div>
+            <div><dt><a href="#ayuda">APOYO DE INDEPORTES POR DEPORTISTA DE SELECCIÓN</a></dt><dd>$3.333.333</dd></div>
+          </dl>
+          <p class="receipt__foot">PROMEDIOS DE LO DECLARADO POR LAS FAMILIAS ENCUESTADAS. LOS GASTOS MENSUALES SE MULTIPLICAN POR 12. NO SON RECIBOS.</p>
+          <div class="receipt__actions">
+            <button class="btn btn--navy" type="button" data-action="print-receipt">Descargar factura</button>
+            <button class="btn btn--outline" type="button" data-action="download-data">Descargar los datos</button>
+          </div>
+        </div>
+
+        <div class="wage-chart">
+          <span class="eyebrow">Cada rubro frente a un salario mínimo</span>
+          <ul class="wage-bars" data-wage-bars></ul>
+          <p class="note">La línea punteada marca un salario mínimo mensual. Transporte y mensualidad, cada uno por sí solo, lo superan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 06 · METODOLOGÍA ===================== -->
+  <section class="screen" data-screen="metodologia" aria-labelledby="t-metodologia" hidden>
+    <div class="wrap">
+      <header class="chapter-head">
+        <span class="chapter-head__num" style="--c: var(--navy)">06</span>
+        <div>
+          <h2 class="chapter-head__title" id="t-metodologia">Cómo lo calculamos</h2>
+          <p class="chapter-head__lede">Qué hicimos, con qué datos y qué límites tienen.</p>
+        </div>
+      </header>
+
+      <div class="method">
+        <article class="method__item">
+          <span class="method__n">A</span>
+          <h3>La encuesta</h3>
+          <p>Formulario en línea con autorización de tratamiento de datos (Ley 1581 de 2012), aplicado en octubre de 2026. De 29 respuestas, 25 son válidas: se excluyeron dos que no autorizaron el uso de sus datos, una de atletismo y una con valores inválidos en tres de las preguntas de gasto. Incluimos una familia que vive en Envigado y entrena en el área metropolitana. Es una muestra no probabilística: sirve para mostrar patrones y casos, no para generalizar a toda la ciudad. 21 de 25 casos son de categoría formativa.</p>
+        </article>
+        <article class="method__item">
+          <span class="method__n">B</span>
+          <h3>El gasto por rubro</h3>
+          <p>Cada familia declaró sus gastos mensuales (multiplicados por 12) y anuales en trece preguntas, agrupadas en ocho rubros. Para cada rubro calculamos el promedio anual de las 25 respuestas; la suma de los promedios da $12.152.715. También reportamos la mediana ($10.270.000), menos sensible a los casos extremos. Una respuesta escribió sus valores en miles (por ejemplo, «600» por $600.000) y se corrigió con ese criterio. Son montos declarados, no verificados con recibos.</p>
+        </article>
+        <article class="method__item">
+          <span class="method__n">C</span>
+          <h3>Frente al salario mínimo</h3>
+          <p>Dividimos cada rubro entre un salario mínimo mensual de referencia de $2.000.000 para expresar el gasto en “salarios mínimos”. Así, el total anual equivale a 6,1 salarios mínimos. En la gráfica de horas usamos como referencia un año de salario mínimo: $24.000.000.</p>
+        </article>
+        <article class="method__item">
+          <span class="method__n">D</span>
+          <h3>Precios de implementos</h3>
+          <p>Precios de uniformes e implementos consultados el 18 de octubre de 2026 en tiendas y clubes de la ciudad.</p>
+        </article>
+        <article class="method__item">
+          <span class="method__n">E</span>
+          <h3>Contratos y apoyos públicos</h3>
+          <p>Revisamos el anexo clausulado del convenio 324 de 2026 entre Indeportes Antioquia y la Liga Antioqueña de Gimnasia ($380 M), y la propuesta y el certificado de disponibilidad presupuestal (CDP 484) del convenio de 2025 ($150 M). El valor por deportista ($3.333.333) divide el convenio de 2025 entre los 45 deportistas que la Liga relacionó en su propuesta; no es dinero que reciban las familias, sino lo que la Liga ejecuta en su nombre. Para 2026 no hay lista de beneficiarios publicada. Los contratos del Inder con la Liga salen de SECOP II · Contratos Electrónicos (datos.gov.co, jbjy-vk9h, 2022–2025), filtrados por proveedor y revisados por su objeto. La Liga respondió a nuestra consulta que no entrega apoyos directos.</p>
+        </article>
+        <article class="method__item">
+          <span class="method__n">F</span>
+          <h3>Tiempo de entrenamiento</h3>
+          <p>Horas semanales de entrenamiento reportadas en la encuesta. La relación entre horas y gasto se mide con la correlación de rango de Spearman (0,80; 25 casos): indica que suben juntas, no que una cause la otra. La escala de cercanía al abandono va de 1 a 5 y asumimos que 5 es lo más cerca. Las horas por edad del texto (cerca de 5 horas entre los 6 y los 9 años; 8 entre los 10 y los 13) salen de las 12 respuestas en las que la edad registrada es la de la deportista: en las demás, quien respondió anotó su propia edad. La encuesta no pregunta días por semana ni semanas al año, así que no estimamos horas anuales. Las categorías y niveles por edad vienen de la Federación Colombiana de Gimnasia, el programa USAG y la Confederación Sudamericana de Gimnasia.</p>
+        </article>
+        <article class="method__item">
+          <span class="method__n">G</span>
+          <h3>Privacidad</h3>
+          <p>No publicamos filtros por comuna: con uno a cinco casos por comuna se podría identificar a una familia. Ninguna respuesta lleva nombre, correo ni teléfono. Las menores solo aparecen con autorización escrita de su acudiente.</p>
+        </article>
+      </div>
+
+      <p class="credits">Un proyecto de Kelly Arias, Ximena Guzmán, Daniel Luna y Maria Isabel Villa.</p>
+    </div>
+  </section>
+
+</main>
+
+<script src="js/main.js"></script>
+</body>
+</html>
